@@ -1,7 +1,7 @@
 'use client'
 import CTAButton from './CTAButton' 
 import { TextAnimate } from '@/components/ui/text-animate'
-import { motion, spring, Variants } from 'motion/react'
+import { motion, Variants } from 'motion/react'
 
 const divVariants: Variants = {
   hidden: {
