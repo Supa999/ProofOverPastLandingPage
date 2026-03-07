@@ -34,7 +34,7 @@ export default function Pathways() {
         <div className="h-1 w-20 bg-red-600 mt-4 shadow-xl shadow-white"></div>
       </div>
 
-      <div className="overflow-x-hidden">
+      <div className="w-105% -mx-6">
         <Marquee className="[--duration:20s]">
           {firstHalf.map((infoItem, index) => {
             return(
