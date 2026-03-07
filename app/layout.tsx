@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${oswald.variable} antialiased overflow-x-hidden`}
+        className={`${inter.variable} ${oswald.variable} antialiased overflow-x-hidden bg-black`}
       >
         <Header />
         {children}

@@ -26,7 +26,7 @@ const divVariants: Variants = {
 
 export default function Header() {
   return (
-    <header className="fixed inset-0 h-26 w-full bg-white flex items-center justify-between px-5 z-50">
+    <header className="fixed inset-0 h-26 bg-white flex items-center justify-between px-5 z-50">
       <section className="flex flex-col items-center flex-1/2 -space-y-2">
         <TextAnimate animation="fadeIn" by="word" as="span" className="text-2xl text-transparent [-webkit-text-stroke:2px_black] uppercase font-bold tracking-widest">
           Proof Over
