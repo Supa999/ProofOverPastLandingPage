@@ -40,15 +40,15 @@ export default function CTASection() {
           </CardDescription>
         </CardHeader>
         <CardContent>
-          <address className="flex flex-col items-center justify-center gap-5">
-            <div className="flex flex-col items-center">
+          <address className="flex flex-col items-center justify-center gap-10">
+            <div className="flex flex-col items-center gap-2">
               <h3 className="text-4xl font-bold tracking-wide">Text Me:</h3>
-              <a href="sms:+19096970387" className="text-2xl font-bold tracking-widest" >909-697-0387</a>
+              <a href="sms:+19096970387" className="text-2xl font-bold tracking-widest underline underline-offset-7" >909-697-0387</a>
             </div>
             <div className="flex flex-col items-center gap-2">
               <h3 className="text-4xl font-bold tracking-wide">Email Me:</h3>
-              <a href="mailto:kevinasteele@icloud.com" className="text-2xl font-bold tracking-widest">johndoe@gmail.com</a>
-              <button className="text-2xl ring-2 rounded-2xl px-2 py-1 font-bold tracking-wide" onClick={() => copyEmail()}>Copy Email</button>
+              <a href="mailto:kevinasteele@icloud.com" className="text-2xl font-bold tracking-widest underline underline-offset-7">johndoe@gmail.com</a>
+              <button className="text-2xl ring-2 rounded-2xl px-2 py-1 font-bold tracking-wide mt-4" onClick={() => copyEmail()}>Copy Email</button>
             </div>
           </address>
         </CardContent>
