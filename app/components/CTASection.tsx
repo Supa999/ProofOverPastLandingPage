@@ -18,7 +18,7 @@ function copyEmail() {
 
 export default function CTASection() {
   return (
-    <section className="text-white py-20 px-6" id='contact-section'>
+    <section className="text-white py-20 px-6 my-30" id='contact-section'>
       <div className="mb-14">
         <TextAnimate
           animation="slideRight"

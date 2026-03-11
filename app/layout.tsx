@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Oswald } from "next/font/google";
 import "./globals.css";
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 const oswald = Oswald({ subsets: ["latin"], variable: "--font-oswald" });
 
@@ -18,12 +19,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en">
       <body
         className={`${inter.variable} ${oswald.variable} antialiased overflow-x-hidden bg-black`}
       >
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

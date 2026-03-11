@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, Variants } from "motion/react";
+import { motion, Variants, animate } from "motion/react";
 
 const buttonVariants: Variants = {
   hidden: {
@@ -19,6 +19,18 @@ const buttonVariants: Variants = {
   },
 };
 
+function handleScroll() {
+  const element = document.getElementById("contact-section");
+  if(element) {
+    animate(window.scrollY, element.offsetTop, {
+      type: "tween",
+      duration: 1.5,
+      ease: 'easeOut',
+      onUpdate: (latest) => window.scrollTo(0, latest),
+    })
+  }
+}
+
 export default function CTAButton() {
   return (
     <motion.section
@@ -27,13 +39,11 @@ export default function CTAButton() {
       animate="visible"
       className="bg-linear-to-br from-red-400 via-red-900 to-red-400 rounded-2xl p-1 w-fit"
     >
-      <a href="#contact-section">
-        <button className="text-2xl bg-white rounded-2xl px-3 py-2">
-          <span className="text-transparent bg-clip-text bg-linear-to-b from-red-400 to-red-900 font-bold">
-            Sign Up
-          </span>
-        </button>
-      </a>
+      <button className="text-2xl bg-white rounded-2xl px-3 py-2" onClick={() => handleScroll()}>
+        <span className="text-transparent bg-clip-text bg-linear-to-b from-red-400 to-red-900 font-bold">
+          Sign Up
+        </span>
+      </button>
     </motion.section>
   );
 }
