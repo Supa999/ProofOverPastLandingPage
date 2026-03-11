@@ -9,7 +9,7 @@ function getYear() {
 export default function Footer() {
   return (
     <footer className='text-white text-xl tracking-widest'>
-      <h2>&copy; {getYear()} Proof Over Past</h2>
+      <h2 className="mb-10">&copy; {getYear()} Proof Over Past</h2>
     </footer>
   )
 }
