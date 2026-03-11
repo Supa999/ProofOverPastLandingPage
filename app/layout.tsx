@@ -18,9 +18,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.variable} ${oswald.variable} antialiased overflow-x-hidden bg-black scroll-smooth`}
+        className={`${inter.variable} ${oswald.variable} antialiased overflow-x-hidden bg-black`}
       >
         <Header />
         {children}
