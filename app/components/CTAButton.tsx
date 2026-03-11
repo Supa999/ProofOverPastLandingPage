@@ -20,9 +20,11 @@ const buttonVariants: Variants = {
 };
 
 function handleScroll() {
-  const element = document.getElementById("contact-section");
+  const element = document.getElementById("contact-section"); 
   if(element) {
-    animate(window.scrollY, element.offsetTop, {
+    const headerHeight = 104;
+  const targetPosition = element?.offsetTop - headerHeight;
+    animate(window.scrollY, targetPosition, {
       type: "tween",
       duration: 1.5,
       ease: 'easeOut',
