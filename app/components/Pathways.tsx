@@ -10,10 +10,11 @@ type InfoProps = {
 const info: Array<InfoProps> = [
   { title: "SWE", icon: "💻" },
   { title: "Construction", icon: "👷" },
-  { title: "Military", icon: "🪖" },
+  { title: "Photography", icon: "📸" },
   { title: "Teaching", icon: "📚" },
   { title: "Mechanic", icon: "🚗" },
-  { title: "Painting", icon: "🎨" },
+  { title: "Detailing", icon: "🧼🫧"  },
+  { title: "Workshops", icon: "🧠" },
   { title: "Sports", icon: "🏈" },
 ];
 
@@ -22,7 +23,7 @@ const secondHalf = info.slice(info.length / 2);
 
 export default function Pathways() {
   return (
-    <section className="bg-black py-20 px-6 text-white border-2 border-black">
+    <section className="py-20 px-6 text-white border-2 border-black">
       <div className="mb-14">
         <TextAnimate
           animation="slideRight"
@@ -31,7 +32,7 @@ export default function Pathways() {
         >
           Programs & Opportunities
         </TextAnimate>
-        <div className="h-1 w-20 bg-red-600 mt-4 shadow-xl shadow-white"></div>
+        <div className="h-1 w-20 bg-red-600 mt-4"></div>
       </div>
 
       <div className="w-110% -mx-6">

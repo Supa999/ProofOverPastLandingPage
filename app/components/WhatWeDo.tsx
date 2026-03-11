@@ -34,7 +34,7 @@ const slideRight: Variants = {
 
 export default function WhatWeDo() {
   return (
-    <section className="py-20 px-6 bg-black text-white border-2 border-black">
+    <section className="py-20 px-6 text-white border-2 border-black">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="mb-12">
