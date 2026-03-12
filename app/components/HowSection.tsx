@@ -62,6 +62,7 @@ function renderCards() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false, amount: 0.2 }}
+        className="w-full"
       >
         <Card className="bg-black px-4">
           <CardTitle>
