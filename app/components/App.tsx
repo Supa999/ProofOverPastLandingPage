@@ -2,6 +2,7 @@ import Hero from './Hero'
 import WhatWeDo from './WhatWeDo'
 import Pathways from './Pathways'
 import CTASection from './CTASection'
+import HowSection from './HowSection'
 
 export default function App() {
   return (
@@ -9,6 +10,7 @@ export default function App() {
       <Hero />
       <WhatWeDo />
       <Pathways />
+      <HowSection />
       <CTASection />
     </>
   )

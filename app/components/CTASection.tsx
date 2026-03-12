@@ -12,7 +12,7 @@ import {
 import { ShineBorder } from "@/components/ui/shine-border";
 
 function copyEmail() {
-  navigator.clipboard.writeText("johndoe@gmail.com");
+  navigator.clipboard.writeText("proofoverpast@gmail.com");
   alert("Email Copied!");
 }
 
@@ -47,7 +47,7 @@ export default function CTASection() {
             </div>
             <div className="flex flex-col items-center gap-2">
               <h3 className="text-4xl font-bold tracking-wide">Email Me:</h3>
-              <a href="mailto:kevinasteele@icloud.com" className="text-2xl font-bold tracking-widest underline underline-offset-7">johndoe@gmail.com</a>
+              <a href="mailto:proofoverpast@gmail.com" className="text-2xl font-bold tracking-widest underline underline-offset-7">proofoverpast@gmail.com</a>
               <button className="text-2xl ring-2 rounded-2xl px-2 py-1 font-bold tracking-wide mt-4" onClick={() => copyEmail()}>Copy Email</button>
             </div>
           </address>
